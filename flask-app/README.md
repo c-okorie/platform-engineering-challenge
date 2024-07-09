@@ -40,8 +40,10 @@ This comprehensive solution outlines the steps for containerization and deployme
 
 * Build the Docker image:
      ```
-    docker build -t emmyforlife/flask-app:latest . # Replace emmyforlife with your Docker Hub username.
+    docker build -t emmyforlife/flask-app:latest . 
     ```
+     _Replace emmyforlife with your Docker Hub username._
+  
 * Push the image to Docker Hub or other image repository (requires login):
      ```
     docker login
