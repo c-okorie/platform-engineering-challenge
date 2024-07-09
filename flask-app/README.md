@@ -1,6 +1,6 @@
  # Get Started with Your Powerful Flask App
 
-Unleash the power of Kubernetes for your Flask application! 
+Unleash the power of Kubernetes for your Flask application! The application is a service that responds to an HTTP GET request and returns timestamp and hostname.
 This comprehensive solution outlines the steps for containerization and deployment with best practices. Leverage Prometheus for robust monitoring and optimize your Docker image size for efficient workflows. Enjoy a seamless setup experience with detailed instructions and local Kubernetes testing capabilities.
 
 ## Key Features:
