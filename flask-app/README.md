@@ -22,7 +22,6 @@ This comprehensive solution outlines the steps for containerization and deployme
 ### 1. Clone the repository
    ```
    git clone https://github.com/c-okorie/platform-engineering-challenge.git 
-   git checkout platform
    cd flask-app
   ```
 ### 2. Test the application locally 
