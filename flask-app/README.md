@@ -69,7 +69,23 @@ https://minikube.sigs.k8s.io/docs/start/
     kubectl get services
     kubectl get ingress
     ```
+### 6 Monitoring/Metrics
+
+* Add Helm Repositories:
+    ```
+    helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+    helm repo add grafana https://grafana.github.io/helm-charts
+    helm repo update
+    ```
 * Install Prometheus and Grafana:
     ```
-    kubectl apply -f https://raw.githubusercontent.com/prometheus-operator/prometheus-operator/master/bundle.yaml
+    helm install prometheus prometheus-community/kube-prometheus-stack --namespace monitoring --create-namespace
+    helm install grafana grafana/grafana --namespace monitoring
     ```
+* Accessing the Service:
+    ```
+    kubectl port-forward -n monitoring svc/prometheus-kube-prometheus-prometheus 9090:9090
+    kubectl port-forward -n monitoring svc/grafana 3000:3000
+    ```
+    You can access Prometheus at `http://localhost:9090` and `Grafana at http://localhost:3000`
+* Final steps, add Prometheus as data source in Grafana and import dashboards
