@@ -24,13 +24,3 @@ spec:
           limits:
             memory: "512Mi"
             cpu: "1"
-        readinessProbe:
-          httpGet:
-            port: 5000
-          initialDelaySeconds: 5
-          periodSeconds: 10
-        livenessProbe:
-          httpGet:
-            port: 5000
-          initialDelaySeconds: 10
-          periodSeconds: 15
