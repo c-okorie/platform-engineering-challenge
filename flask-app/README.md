@@ -49,7 +49,9 @@ This comprehensive solution outlines the steps for containerization and deployme
      ```
 
 ### 4.  Setup Testing Environment (For this demo, I used a local instance of minikube)
-Follow the official Minikube installation guide for your operating system:
+I have added the `bootstrap_minikube.sh` file to bootstrap the the minikube cluster for local testing.
+
+Further details can be found in the official Minikube website in the following link:
 https://minikube.sigs.k8s.io/docs/start/
 
 
