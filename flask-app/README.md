@@ -51,9 +51,15 @@ This comprehensive solution outlines the steps for containerization and deployme
      ```
 
 ### 4.  Setup Testing Environment (For this demo, I used a local instance of minikube)
-I have added the `bootstrap_minikube.sh` file to bootstrap the the minikube cluster for local testing.
+I have added the `bootstrap_minikube.sh` file to bootstrap the the minikube cluster for local testing using Windows Subsystem for Linux (WSL) with Ubuntu. WSL is for a seamless Linux environment within Windows.
 
-Further details can be found in the official Minikube website in the following link:
+Alternatively, you can run a Minikube cluster on other operating systems and environments, such as:
+
+* **Linux:** Install Minikube directly on your Linux distribution.
+* **macOS:** Use Homebrew to install and manage Minikube.
+* **Windows:** Install Minikube natively on Windows without WSL.
+
+Further information on `minikube` can be found in the official Minikube website in the following link:
 https://minikube.sigs.k8s.io/docs/start/
 
 
