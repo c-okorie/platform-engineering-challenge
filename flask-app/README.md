@@ -9,6 +9,7 @@ This comprehensive solution outlines the steps for containerization and deployme
 * **Local Development:** Easily run the application locally for testing and refinement.
 * **Dockerized Deployment:** Package your application in a self-contained Docker image for simplified deployment across environments.
 * **Kubernetes Integration:** Seamlessly integrate your application within a Kubernetes cluster for scalable and resilient operations.
+* **Minikube** installation with NGINX Ingress Controller and MetalLB for load balancing.
 
 ## Prerequisites:
 
@@ -62,6 +63,10 @@ Alternatively, you can run a Minikube cluster on other operating systems and env
 Further information on `minikube` can be found in the official Minikube website in the following link:
 https://minikube.sigs.k8s.io/docs/start/
 
+Ensure you have installed NGINX Ingress Controller and MetalLB for load balancing. Follow the respective guides for setup:
+
+* [NGINX Ingress Controller Installation](https://kubernetes.github.io/ingress-nginx/deploy/)
+* [MetalLB Installation](https://metallb.universe.tf/installation/)
 
 ### 5 Deployment
 
